@@ -11,7 +11,6 @@
   <ItemGroup>
     <PublishReadyToRunExclude Include="Microsoft.Management.Infrastructure.Native.dll" />
     <PublishReadyToRunExclude Include="Microsoft.PowerShell.PackageManagement.dll" />
-    <PublishReadyToRunEmitSymbolsExclude Include="Microsoft.PowerShell.PackageManagement.dll" />
     <PublishReadyToRunExclude Include="Microsoft.PowerShell.Commands.Utility.dll" />
     <PublishReadyToRunExclude Include="Microsoft.PowerShell.Commands.Management.dll" />
     <PublishReadyToRunExclude Include="Microsoft.CodeAnalysis.CSharp.dll" />
