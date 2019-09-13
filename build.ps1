@@ -62,11 +62,11 @@ function BuildOutput([string] $runtime, [bool] $isSelfContained) {
     if ($hasRuntime -and !$isSelfContained) {
         Write-Host "Building $runtime"
         $runtimeSuffix = ".$runtime"
-		$ridSwitch = "-r", "$runtime", "--self-contained", "false", "/p:PublishReadyToRun=true"
+		$ridSwitch = "-r", "$runtime", "--self-contained", "false"
     } elseif ($hasRuntime -and $isSelfContained) {
         Write-Host "Building $runtime self-contained"
         $runtimeSuffix = ".$runtime.self-contained"
-		$ridSwitch = "-r", "$runtime", "--self-contained", "true", "/p:PublishReadyToRun=true", "/p:PublishReadyToRunEmitSymbols=true"
+		$ridSwitch = "-r", "$runtime", "--self-contained", "true"
     } else {
         $runtimeSuffix = ".no-runtime"
     }
