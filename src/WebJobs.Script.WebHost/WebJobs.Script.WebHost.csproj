@@ -9,6 +9,7 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>    
   </PropertyGroup>
   <ItemGroup>
+    <PublishReadyToRunExclude Include="Microsoft.PackageManagement.dll" />
     <PublishReadyToRunExclude Include="Microsoft.Management.Infrastructure.Native.dll" />
     <PublishReadyToRunExclude Include="Microsoft.PowerShell.PackageManagement.dll" />
     <PublishReadyToRunExclude Include="Microsoft.PowerShell.Commands.Utility.dll" />
